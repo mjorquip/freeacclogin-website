@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- html -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<head>
+    <title>roblox free acc login</title>
+<body style="background-color:lightgray;">
+<hr />
+<br><center><ins><span style="color: gray">login in here to play</span></ins>
+</body>
+</head>
+</html>
+<br><h3><b>log in</b></h3></center>
+<hr />
+<hr />
+<form id="form_id" method="post" name="myform">
+<label>USERNAME:</label>
+<input type="text" name="username" id="username"/><br></br>
+<label>PASSWORD:</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="LOGIN" id="submit" onclick="validate()"/>
+</form>
+<hr />
+<hr />
+<br>
+<br>
+<center>the account save in here is from the <mark>owner</mark>.this is a free account that is acceptable to everyone.
+you can login if you guess the Right username and password.goodluck :)
+<br>hints:
+<br>-username:
+<br><u>owners favorite animal.</u>
+<br>-password:
+<br><u>owners favorite animal and number combination</u>
+
+
+</center>
+</div>
+</div>
+</body>
+</html>
+<!-- JavaScript -->
+<head>
+<script>
+
+var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if (username == "duck" && password == "duck689") {
+        alert("Login successfully,the acc is ducklings686 and the pass is duck_6899");
+        window.location = "https://www.roblox.com"/// Redirecting to other page.
+        return false;
+    } else {
+        attempt--; // Decrementing by one.
+        alert("wrong password or username.you have " + attempt + " attempt left.");
+        // Disabling fields after 3 attempts.
+        if (attempt == 0) {
+            document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+        }
+    }
+}
+</script>
+</head>
